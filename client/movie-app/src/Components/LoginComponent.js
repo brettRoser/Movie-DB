@@ -11,10 +11,10 @@ class Login extends React.Component {
     handleSubmit(e) {
         alert('Processing your login request...');
     }
-
+// set HTTPS=true&&npm start
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form action="https://localhost:44335/api/login" onSubmit={this.handleSubmit} method="post">
                 <label>Username:
                     <input name="username" type="text" placeholder="username" />
                 </label>
